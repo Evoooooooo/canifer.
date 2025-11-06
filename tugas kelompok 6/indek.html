@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Canifer Outdoor</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* Reset dan font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+    a {
+      color: #6b8e23; /* hijau kecoklatan */
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: #6b8e23;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #a2b88f; /* lighter green */
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 2rem;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background-color: #6b8e23;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #556b2f;
+    }
+
+    /* Produk Section */
+    section#produk {
+      padding: 3rem 2rem;
+      background-color: #111;
+    }
+    section#produk h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #6b8e23;
+      text-align: center;
+    }
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .product-item {
+      background-color: #222;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(107,142,35,0.3);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .product-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(107,142,35,0.6);
+    }
+    .product-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    .product-item h3 {
+      margin-bottom: 0.5rem;
+      color: #a2b88f;
+    }
+    .product-item p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    /* Contact Section */
+    section#kontak {
+      padding: 3rem 2rem;
+      background-color: #000;
+      text-align: center;
+    }
+    section#kontak h2 {
+      color: #6b8e23;
+      margin-bottom: 1rem;
+    }
+    .contact-info p {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .contact-info a {
+      color: #6b8e23;
+      font-weight: 600;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: #666;
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+        max-width: 100%;
+      }
+      nav ul {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Canifer</div>
+  <nav>
+    <ul>
+      <li><a href="#hero">Beranda</a></li>
+      <li><a href="#about">Tentang Kami</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <h1>Perlengkapan Gunung Terbaik</h1>
+  <p>Canifer hadir dengan alat outdoor berkualitas untuk setiap pendakianmu.</p>
+  <a href="#produk" class="btn">Lihat Produk</a>
+</section>
+
+<section class="about" id="about" style="padding:2rem; max-width:800px; margin: auto; color:#ccc;">
+  <h2 style="color:#6b8e23; margin-bottom: 1rem; text-align:center;">Tentang Kami</h2>
+  <p>
+    Canifer adalah merek perlengkapan outdoor yang berkomitmen menghadirkan produk dengan kualitas terbaik untuk para petualang.
+    Kami percaya bahwa setiap perjalanan di alam bebas harus ditemani dengan peralatan yang tangguh, ringan, dan nyaman.
+  </p>
+</section>
+
+<section id="produk">
+  <h2>Produk Kami</h2>
+  <div class="product-container">
+    <!-- Contoh produk placeholder -->
+    <div class="product-item">
+      <img src="https://via.placeholder.com/300x180?text=Flysheet" alt="Flysheet Canifer" />
+      <h3>Flysheet Canifer</h3>
+      <p>Pelindung tahan air yang ringan dan kuat, cocok untuk semua medan.</p>
+    </div>
+    <div class="product-item">
+      <img src="https://via.placeholder.com/300x180?text=Waistbag" alt="Waistbag Canifer" />
+      <h3>Waistbag Canifer</h3>
+      <p>Tas pinggang praktis dengan banyak kantong, ideal untuk perjalanan singkat.</p>
+    </div>
+    <div class="product-item">
+      <img src="https://via.placeholder.com/300x180?text=Sleeping+Bag" alt="Sleeping Bag Canifer" />
+      <h3>Sleeping Bag Canifer</h3>
+      <p>Memberikan kenyamanan tidur hangat di alam bebas, ringan dan mudah dibawa.</p>
+    </div>
+  </div>
+</section>
+
+<section id="kontak">
+  <h2>Kontak Kami</h2>
+  <div class="contact-info">
+    <p>Email: <a href="mailto:info@canifer.id">info@canifer.id</a></p>
+    <p>Taplink: <a href="https://taplink.cc/canifer" target="_blank">taplink.cc/canifer</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Canifer Outdoor. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

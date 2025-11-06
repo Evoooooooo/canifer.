@@ -1,0 +1,103 @@
+/* ====== DETAIL PRODUK ====== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #25D366;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    opacity: 0.8;
+}
+
+.detail-produk {
+    padding: 4rem 7%;
+}
+
+.detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.gambar-produk img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.info-produk {
+    max-width: 500px;
+}
+
+.info-produk h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.harga {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d9534f;
+    margin-bottom: 1rem;
+}
+
+.deskripsi {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.spesifikasi {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.aksi .btn {
+    display: inline-block;
+    margin: 0.3rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn.beli {
+    background-color: #ff6600;
+}
+
+.btn.wa {
+    background-color: #25D366;
+}
+
+.aksi .btn:hover {
+    opacity: 0.8;
+}
